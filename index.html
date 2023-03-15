@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <style>
         body,
         h1,
         h5 {
-            font-family: "Raleway", sans-serif
+            font-family: 'Times New Roman', Times, serif;
         }
 
         h2 {
@@ -35,24 +36,98 @@
         b {
             float: right;
         }
+
+        .tccb {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 60px;
+            color: transparent;
+        }
+
+        .tccb2 {
+            animation: effect 2s linear infinite;
+        }
+
+        @keyframes effect {
+            0% {
+                background: linear-gradient(#b66a6a, #ec0909);
+                -webkit-background-clip: text;
+            }
+
+            100% {
+                background: linear-gradient(#3CE7D7, #000FFF);
+                -webkit-background-clip: text;
+            }
+        }
+
+        .menu_button {
+            position: absolute;
+            top: 55%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+        }
+
+        .birthday_note {
+            position: absolute;
+            top: 22%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            font-family: cursive;
+            font-size: x-large;
+            color: black;
+        }
+
+        .insta {
+            position: absolute;
+            top: 50%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            font-family: cursive;
+            font-size: large;
+            color: rgb(215, 19, 137);
+        }
     </style>
 </head>
 
 <body>
 
     <div class="bgimg w3-display-container w3-text-white">
-        <div class="w3-display-middle w3-jumbo">
-            <p>TCCB</p>
+        <div class="tccb">
+            <p class="tccb2">TCCB</p>
         </div>
-        <div style="position: absolute; top: 60%; left: 42%;">
+        <div class="birthday_note">
+            <p>Café <br> will be available <br> for rent on <br> Birthday Parties</p>
+        </div>
+        <div class="tccb">
+            <a class="insta" href="https://instagram.com/the_chai_chaska_bar_cafe_wakad?igshid=YmMyMTA2M2Y="
+                target="_blank">
+                <i style="font-size:30px" class="fa">&#xf16d;</i></a>
+        </div>
+        <div class="menu_button">
             <p><button onclick="document.getElementById('menu').style.display='block'"
                     class="w3-button w3-black">MENU</button></p>
             <!-- <p><button onclick="document.getElementById('contact').style.display='block'"
                     class="w3-button w3-black">contact</button></p> -->
         </div>
         <div class="w3-display-bottomleft w3-container">
-            <p class="w3-xlarge">Monday - Sunday 10 AM - 12 AM</p>
-            <p class="w3-large">Utkarsh Chowk, Shankar Kalat Nagar, Wakad, Pune - 411057<br>- Rohit Barne</p>
+            <p class="w3-xlarge">Monday - Sunday <br> 10 AM - 12 AM</p>
+            <p class="w3-large">The Chai Chaska Bar & Cafe, <br>
+                Utkarsh Chowk, Shankar Kalat Nagar, Wakad, Pune - 411057</p>
         </div>
     </div>
 
@@ -66,8 +141,11 @@
             </div>
             <!-- OFFERS -->
             <div class="w3-container">
-                <h5>3 Chai - Garlic Bread + <br> Vegetable Sandwich <b>₹ 159</b></h5>
-                <h5>Cold Coffee + Corn Mayo/<br>Veg Mayo + French Fries <b>₹ 209</b></h5>
+                <h5>2 Chai + Cheese Chutney <b>₹ 99</b></h5>
+                <h5>Ice Tea + Veg Burger <b>₹ 130</b></h5>
+                <h5>2 Chai + Bun Maska + <br> French Fries <b>₹ 139</b></h5>
+                <h5>3 Chai + Garlic Bread + <br> Vegetable Sandwich <b>₹ 169</b></h5>
+                <h5>Cold Coffee + Corn Mayo/<br>Veg Mayo + French Fries <b>₹ 219</b></h5>
             </div>
             <!-- CHAi -->
             <div class="w3-container w3-black">
@@ -78,81 +156,82 @@
                 <h5>Adrak <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
                 <h5>Chocolate <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
                 <h5>Rose <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Elaichi <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Paan <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Black Tea <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Kesar <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Butterscotch <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Vanilla <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Watermellon <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Mango <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Strawberry <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Masala <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Lemon Tea <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Tulsi <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Kesar Kulfi <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Dalchini <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Rum <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Beer <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Redwine <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Whiskey <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Scotch <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Vodka <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
+                <h5>Elaichi <b>₹ 20 &emsp;&emsp; ₹ 30</b></h5>
+                <h5>Paan <b>₹ 20 &emsp;&emsp; ₹ 40</b></h5>
+                <h5>Black Tea <b>₹ 20 &emsp;&emsp; ₹ 40</b></h5>
+                <h5>Kesar <b>₹ 20 &emsp;&emsp; ₹ 40</b></h5>
+                <h5>Butterscotch <b>₹ 20 &emsp;&emsp; ₹ 40</b></h5>
+                <h5>Vanilla <b>₹ 20 &emsp;&emsp; ₹ 40</b></h5>
+                <h5>Watermellon <b>₹ 20 &emsp;&emsp; ₹ 40</b></h5>
+                <h5>Mango <b>₹ 20 &emsp;&emsp; ₹ 40</b></h5>
+                <h5>Strawberry <b>₹ 20 &emsp;&emsp; ₹ 40</b></h5>
+                <h5>Masala <b>₹ 20 &emsp;&emsp; ₹ 40</b></h5>
+                <h5>Lemon Tea <b>₹ 20 &emsp;&emsp; ₹ 40</b></h5>
+                <h5>Tulsi <b>₹ 25 &emsp;&emsp; ₹ 40</b></h5>
+                <h5>Kesar Kulfi <b>₹ 25 &emsp;&emsp; ₹ 40</b></h5>
+                <h5>Dalchini <b>₹ 25 &emsp;&emsp; ₹ 40</b></h5>
+                <h5>Rum <b>₹ 25 &emsp;&emsp; ₹ 40</b></h5>
+                <h5>Beer <b>₹ 30 &emsp;&emsp; ₹ 50</b></h5>
+                <h5>Redwine <b>₹ 30 &emsp;&emsp; ₹ 50</b></h5>
+                <h5>Whiskey <b>₹ 30 &emsp;&emsp; ₹ 50</b></h5>
+                <h5>Scotch <b>₹ 30 &emsp;&emsp; ₹ 50</b></h5>
+                <h5>Vodka <b>₹ 30 &emsp;&emsp; ₹ 50</b></h5>
             </div>
             <!-- FRUIT BEER -->
             <div class="w3-container w3-black">
                 <h1>FRUIT BEER</h1>
             </div>
             <div class="w3-container">
-                <h5>Peach Beer <b>₹ 30</b></h5>
-                <h5>Cranberry Beer <b>₹ 30</b></h5>
-                <h5>Strawberry Beer <b>₹ 30</b></h5>
-                <h5>Malt <b>₹ 30</b></h5>
+                <h5>Peach Beer <b>₹ 80</b></h5>
+                <h5>Cranberry Beer <b>₹ 80</b></h5>
+                <h5>Strawberry Beer <b>₹ 80</b></h5>
+                <h5>Malt <b>₹ 80</b></h5>
             </div>
             <!-- PASTA -->
             <div class="w3-container w3-black">
                 <h1>PASTA</h1>
             </div>
             <div class="w3-container">
-                <h5>Red Sauce Pasta <b>₹ 30</b></h5>
-                <h5>White Sauce Pasta <b>₹ 30</b></h5>
-                <h5>Paneer Tikka Pasta <b>₹ 30</b></h5>
-                <h5><br>Extra Cheese <b>₹ 20</b></h5>
+                <h5>Red Sauce Pasta <b>₹ 80</b></h5>
+                <h5>White Sauce Pasta <b>₹ 90</b></h5>
+                <h5>Paneer Tikka Pasta <b>₹ 120</b></h5>
+                <h5 style="border-bottom: 1px dashed black;"></h5>
+                <h5>Extra Cheese <b>₹ 20</b></h5>
             </div>
             <!-- ICE TEA -->
-            <div class="w3-container w3-black">
+            <div class=" w3-container w3-black">
                 <h1>ICE TEA</h1>
             </div>
             <div class="w3-container">
-                <h5>Plain Ice Tea <b>₹ 30</b></h5>
-                <h5>Lemon Mint Ice Tea <b>₹ 30</b></h5>
-                <h5>Classic Lemonade Tea <b>₹ 30</b></h5>
-                <h5>Peach Tea <b>₹ 30</b></h5>
-                <h5>Watermelon <b>₹ 30</b></h5>
-                <h5>Orange <b>₹ 30</b></h5>
-                <h5>Mango <b>₹ 30</b></h5>
-                <h5>Black Currant <b>₹ 30</b></h5>
-                <h5>Litchi <b>₹ 30</b></h5>
-                <h5>Rum <b>₹ 30</b></h5>
-                <h5>Beer <b>₹ 30</b></h5>
-                <h5>Redwine <b>₹ 30</b></h5>
-                <h5>Scotch <b>₹ 30</b></h5>
-                <h5>Vodka <b>₹ 30</b></h5>
+                <h5>Plain Ice Tea <b>₹ 60</b></h5>
+                <h5>Lemon Mint Ice Tea <b>₹ 70</b></h5>
+                <h5>Classic Lemonade Tea <b>₹ 70</b></h5>
+                <h5>Peach Tea <b>₹ 70</b></h5>
+                <h5>Watermelon <b>₹ 70</b></h5>
+                <h5>Orange <b>₹ 70</b></h5>
+                <h5>Mango <b>₹ 70</b></h5>
+                <h5>Black Currant <b>₹ 70</b></h5>
+                <h5>Litchi <b>₹ 70</b></h5>
+                <h5>Rum <b>₹ 80</b></h5>
+                <h5>Beer <b>₹ 80</b></h5>
+                <h5>Redwine <b>₹ 80</b></h5>
+                <h5>Scotch <b>₹ 80</b></h5>
+                <h5>Vodka <b>₹ 80</b></h5>
             </div>
             <!-- GRILLED SANDWICH -->
             <div class="w3-container w3-black">
                 <h1>GRILLED SANDWICH</h1>
             </div>
             <div class="w3-container">
-                <h5>Chocolate Sandwich <b>₹ 30</b></h5>
-                <h5>Cheese Chutney <b>₹ 30</b></h5>
-                <h5>Veg Mayo <b>₹ 30</b></h5>
-                <h5>Corn Mayo <b>₹ 30</b></h5>
-                <h5>Grilled Veg <b>₹ 30</b></h5>
-                <h5>Chilli Chatpata <b>₹ 30</b></h5>
-                <h5>Tandoori Sandwich <b>₹ 30</b></h5>
-                <h5>Paneer Takatak <b>₹ 30</b></h5>
-                <h5>Veg Cheese Sandwich <b>₹ 30</b></h5>
+                <h5>Chocolate Sandwich <b>₹ 70</b></h5>
+                <h5>Cheese Chutney <b>₹ 70</b></h5>
+                <h5>Veg Mayo <b>₹ 80</b></h5>
+                <h5>Corn Mayo <b>₹ 80</b></h5>
+                <h5>Grilled Veg <b>₹ 80</b></h5>
+                <h5>Chilli Chatpata <b>₹ 80</b></h5>
+                <h5>Tandoori Sandwich <b>₹ 80</b></h5>
+                <h5>Paneer Takatak <b>₹ 100</b></h5>
+                <h5>Veg Cheese Sandwich <b>₹ 100</b></h5>
             </div>
             <!-- HOT COFFEE -->
             <div class="w3-container w3-black">
@@ -160,153 +239,153 @@
             </div>
             <div class="w3-container">
                 <h5>.<b>Regular &nbsp; JUMBO</b></h5>
-                <h5>Hot Coffee <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Strong Hot Coffee <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Black Coffee <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Strong Chocolate Coffee <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Hazelnut <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Irish Coffee <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Rum <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Beer <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Redwine <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Whiskey <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Scotch <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
-                <h5>Vodka <b>₹ 15 &emsp;&emsp; ₹ 30</b></h5>
+                <h5>Hot Coffee <b>₹ 20 &emsp;&emsp; ₹ 40</b></h5>
+                <h5>Strong Hot Coffee <b>₹ 20 &emsp;&emsp; ₹ 40</b></h5>
+                <h5>Black Coffee <b>₹ 25 &emsp;&emsp; ₹ 50</b></h5>
+                <h5>Strong Chocolate Coffee <b>₹ 25 &emsp;&emsp; ₹ 50</b></h5>
+                <h5>Hazelnut <b>₹ 30 &emsp;&emsp; ₹ 60</b></h5>
+                <h5>Irish Coffee <b>₹ 30 &emsp;&emsp; ₹ 60</b></h5>
+                <h5>Rum <b>₹ 40 &emsp;&emsp; ₹ 80</b></h5>
+                <h5>Beer <b>₹ 40 &emsp;&emsp; ₹ 80</b></h5>
+                <h5>Redwine <b>₹ 40 &emsp;&emsp; ₹ 80</b></h5>
+                <h5>Whiskey <b>₹ 40 &emsp;&emsp; ₹ 80</b></h5>
+                <h5>Scotch <b>₹ 40 &emsp;&emsp; ₹ 80</b></h5>
+                <h5>Vodka <b>₹ 40 &emsp;&emsp; ₹ 80</b></h5>
             </div>
             <!-- COLD COFFEE -->
             <div class="w3-container w3-black">
                 <h1>COLD COFFEE (MILK)</h1>
             </div>
             <div class="w3-container">
-                <h5>Cold Coffee <b>₹ 30</b></h5>
-                <h5>Strong Cold Coffee <b>₹ 30</b></h5>
-                <h5>Cold Coffee with Crush <b>₹ 30</b></h5>
-                <h5>Cold Coffee <br> with Ice-cream <b>₹ 30</b></h5>
-                <h5>Irish Cold Coffee <b>₹ 30</b></h5>
-                <h5>Hazelnut Cold Coffee <b>₹ 30</b></h5>
-                <h5>Caramel Cold Coffee <b>₹ 30</b></h5>
-                <h5>TCCB Special <b>₹ 30</b></h5>
+                <h5>Cold Coffee <b>₹ 60</b></h5>
+                <h5>Strong Cold Coffee <b>₹ 70</b></h5>
+                <h5>Cold Coffee with Crush <b>₹ 70</b></h5>
+                <h5>Cold Coffee <br> with Ice-cream <b>₹ 80</b></h5>
+                <h5>Irish Cold Coffee <b>₹ 100</b></h5>
+                <h5>Hazelnut Cold Coffee <b>₹ 100</b></h5>
+                <h5>Caramel Cold Coffee <b>₹ 100</b></h5>
+                <h5>TCCB Special <b>₹ 110</b></h5>
             </div>
             <!-- KUKA -->
             <div class="w3-container w3-black">
                 <h1>KUKA (Spl. Thick Coffee)</h1>
             </div>
             <div class="w3-container">
-                <h5>Classic Kuka <b>₹ 30</b></h5>
-                <h5>Classic Kuka with Crush <b>₹ 30</b></h5>
-                <h5>Classic Kuka <br> with Ice-cream <b>₹ 30</b></h5>
-                <h5>Irish Kuka <b>₹ 30</b></h5>
-                <h5>Hazelnut Kuka <b>₹ 30</b></h5>
-                <h5>Caramel Kuka <b>₹ 30</b></h5>
-                <h5>CAD M <b>₹ 30</b></h5>
-                <h5>CAD B <b>₹ 30</b></h5>
+                <h5>Classic Kuka <b>₹ 55</b></h5>
+                <h5>Classic Kuka with Crush <b>₹ 65</b></h5>
+                <h5>Classic Kuka <br> with Ice-cream <b>₹ 75</b></h5>
+                <h5>Irish Kuka <b>₹ 95</b></h5>
+                <h5>Hazelnut Kuka <b>₹ 95</b></h5>
+                <h5>Caramel Kuka <b>₹ 95</b></h5>
+                <h5>CAD M <b>₹ 85</b></h5>
+                <h5>CAD B <b>₹ 95</b></h5>
             </div>
             <!-- MOCKTAILS -->
             <div class="w3-container w3-black">
                 <h1>MOCKTAILS</h1>
             </div>
             <div class="w3-container">
-                <h5>Lemon Mint Mojito <b>₹ 30</b></h5>
-                <h5>Green Apple Mojito <b>₹ 30</b></h5>
-                <h5>Blue Virgin Mojito <b>₹ 30</b></h5>
-                <h5>Red Velvet Mojito <b>₹ 30</b></h5>
-                <h5>Strawberry Pop Soda <b>₹ 30</b></h5>
-                <h5>Mango pulp Soda <b>₹ 30</b></h5>
-                <h5>Rum <b>₹ 30</b></h5>
-                <h5>Beer <b>₹ 30</b></h5>
-                <h5>Whiskey <b>₹ 30</b></h5>
-                <h5>Scotch <b>₹ 30</b></h5>
-                <h5>Vodka <b>₹ 30</b></h5>
-                <h5>Redwine <b>₹ 30</b></h5>
-                <h5>The Islander <b>₹ 30</b></h5>
-                <h5>The 3 Layer Mocktail <b>₹ 30</b></h5>
+                <h5>Lemon Mint Mojito <b>₹ 70</b></h5>
+                <h5>Green Apple Mojito <b>₹ 80</b></h5>
+                <h5>Blue Virgin Mojito <b>₹ 80</b></h5>
+                <h5>Red Velvet Mojito <b>₹ 90</b></h5>
+                <h5>Strawberry Pop Soda <b>₹ 90</b></h5>
+                <h5>Mango pulp Soda <b>₹ 90</b></h5>
+                <h5>Rum <b>₹ 90</b></h5>
+                <h5>Beer <b>₹ 90</b></h5>
+                <h5>Whiskey <b>₹ 90</b></h5>
+                <h5>Scotch <b>₹ 90</b></h5>
+                <h5>Vodka <b>₹ 90</b></h5>
+                <h5>Redwine <b>₹ 90</b></h5>
+                <h5>The Islander <b>₹ 130</b></h5>
+                <h5>The 3 Layer Mocktail <b>₹ 130</b></h5>
             </div>
             <!-- FRIES -->
             <div class="w3-container w3-black">
                 <h1>FRIES</h1>
             </div>
             <div class="w3-container">
-                <h5>French Fries <b>₹ 30</b></h5>
-                <h5>Peri-Peri Fries <b>₹ 30</b></h5>
-                <h5>Masala Fries <b>₹ 30</b></h5>
-                <h5>Cheese Fries <b>₹ 30</b></h5>
-                <h5>Loaded Fries <b>₹ 30</b></h5>
+                <h5>French Fries <b>₹ 80</b></h5>
+                <h5>Peri-Peri Fries <b>₹ 90</b></h5>
+                <h5>Masala Fries <b>₹ 90</b></h5>
+                <h5>Cheese Fries <b>₹ 110</b></h5>
+                <h5>Loaded Fries <b>₹ 130</b></h5>
             </div>
             <!-- PIZZA -->
             <div class="w3-container w3-black">
                 <h1>PIZZA</h1>
             </div>
             <div class="w3-container">
-                <h5>Kulhad Pizza <b>₹ 30</b></h5>
-                <h5>Crust Pizza <b>₹ 30</b></h5>
-                <h5>Cheese Pizza <b>₹ 30</b></h5>
-                <h5>Veg Cheese Pizza <b>₹ 30</b></h5>
-                <h5>American Corn Cheese <b>₹ 30</b></h5>
-                <h5>Chilli Cheese Pizza <b>₹ 30</b></h5>
-                <h5>Olive Mix Pizza <b>₹ 30</b></h5>
-                <h5>Paneer Cheese Pizza <b>₹ 30</b></h5>
-                <h5>TCCB Spl. Pizza <b>₹ 30</b></h5>
+                <h5>Kulhad Pizza <b>₹ 90</b></h5>
+                <h5>Crust Pizza <b>₹ 110</b></h5>
+                <h5>Cheese Pizza <b>₹ 120</b></h5>
+                <h5>Veg Cheese Pizza <b>₹ 140</b></h5>
+                <h5>American Corn Cheese <b>₹ 150</b></h5>
+                <h5>Chilli Cheese Pizza <b>₹ 150</b></h5>
+                <h5>Olive Mix Pizza <b>₹ 160</b></h5>
+                <h5>Paneer Cheese Pizza <b>₹ 170</b></h5>
+                <h5>TCCB Spl. Pizza <b>₹ 200</b></h5>
             </div>
             <!-- FRUIT SHAKE -->
             <div class="w3-container w3-black">
                 <h1>FRUIT SHAKE</h1>
             </div>
             <div class="w3-container">
-                <h5>Sitafal Shake <b>₹ 30</b></h5>
-                <h5>Strawberry Shake <b>₹ 30</b></h5>
-                <h5>Mango Shake <b>₹ 30</b></h5>
-                <h5>Litchi Shake <b>₹ 30</b></h5>
-                <h5>Kiwi Shake <b>₹ 30</b></h5>
-                <h5>Jamun Shake <b>₹ 30</b></h5>
-                <h5>Apple Shake <b>₹ 30</b></h5>
-                <h5>Banana Shake <b>₹ 30</b></h5>
-                <h5>Strawberry & Oreo <b>₹ 30</b></h5>
+                <h5>Sitafal Shake <b>₹ 80</b></h5>
+                <h5>Strawberry Shake <b>₹ 80</b></h5>
+                <h5>Mango Shake <b>₹ 80</b></h5>
+                <h5>Litchi Shake <b>₹ 80</b></h5>
+                <h5>Kiwi Shake <b>₹ 80</b></h5>
+                <h5>Jamun Shake <b>₹ 80</b></h5>
+                <h5>Apple Shake <b>₹ 80</b></h5>
+                <h5>Banana Shake <b>₹ 80</b></h5>
+                <h5>Strawberry & Oreo <b>₹ 100</b></h5>
             </div>
             <!-- SHAKE -->
             <div class="w3-container w3-black">
                 <h1>SHAKE</h1>
             </div>
             <div class="w3-container">
-                <h5>Kit-Kat Shake <b>₹ 30</b></h5>
-                <h5>Cadbury Shake <b>₹ 30</b></h5>
-                <h5>Oreo Shake <b>₹ 30</b></h5>
-                <h5>Bournvita Shake <b>₹ 30</b></h5>
+                <h5>Kit-Kat Shake <b>₹ 80</b></h5>
+                <h5>Cadbury Shake <b>₹ 80</b></h5>
+                <h5>Oreo Shake <b>₹ 80</b></h5>
+                <h5>Bournvita Shake <b>₹ 80</b></h5>
             </div>
             <!-- MAGGIE -->
             <div class="w3-container w3-black">
                 <h1>MAGGIE'S</h1>
             </div>
             <div class="w3-container">
-                <h5>Plain Maggi <b>₹ 30</b></h5>
-                <h5>Double Masala Maggi <b>₹ 30</b></h5>
-                <h5>Cheese & Butter Maggi <b>₹ 30</b></h5>
-                <h5>Vegetable Maggi <b>₹ 30</b></h5>
-                <h5>Schezwan Maggi <b>₹ 30</b></h5>
-                <h5>Tandoori Maggi <b>₹ 30</b></h5>
-                <h5>Corn Maggi <b>₹ 30</b></h5>
-                <h5>Veg Cheese Maggi <b>₹ 30</b></h5>
-                <h5>TCCB Special Maggi <b>₹ 30</b></h5>
+                <h5>Plain Maggi <b>₹ 50</b></h5>
+                <h5>Double Masala Maggi <b>₹ 60</b></h5>
+                <h5>Cheese & Butter Maggi <b>₹ 80</b></h5>
+                <h5>Vegetable Maggi <b>₹ 80</b></h5>
+                <h5>Schezwan Maggi <b>₹ 80</b></h5>
+                <h5>Tandoori Maggi <b>₹ 90</b></h5>
+                <h5>Corn Maggi <b>₹ 90</b></h5>
+                <h5>Veg Cheese Maggi <b>₹ 100</b></h5>
+                <h5>TCCB Special Maggi <b>₹ 110</b></h5>
             </div>
             <!-- BURGER -->
             <div class="w3-container w3-black">
                 <h1>BURGER</h1>
             </div>
             <div class="w3-container">
-                <h5>Veg Burger <b>₹ 30</b></h5>
-                <h5>Cheese Veg Burger <b>₹ 30</b></h5>
-                <h5>Paneer Tikka Burger <b>₹ 30</b></h5>
-                <h5>Maharaja Burger <b>₹ 30</b></h5>
+                <h5>Veg Burger <b>₹ 80</b></h5>
+                <h5>Cheese Veg Burger <b>₹ 90</b></h5>
+                <h5>Paneer Tikka Burger <b>₹ 120</b></h5>
+                <h5>Maharaja Burger <b>₹ 160</b></h5>
             </div>
             <!-- BITE -->
             <div class="w3-container w3-black">
                 <h1>BITE</h1>
             </div>
             <div class="w3-container">
-                <h5>Grilled Bun Maska <b>₹ 30</b></h5>
-                <h5>Cheese Bun Maska <b>₹ 30</b></h5>
-                <h5>Garlic Bun Maska <b>₹ 30</b></h5>
-                <h5>Garlic Bread <b>₹ 30</b></h5>
-                <h5>Cheese Garlic Bread <b>₹ 30</b></h5>
+                <h5>Grilled Bun Maska <b>₹ 40</b></h5>
+                <h5>Cheese Bun Maska <b>₹ 50</b></h5>
+                <h5>Garlic Bun Maska <b>₹ 50</b></h5>
+                <h5>Garlic Bread <b>₹ 50</b></h5>
+                <h5>Cheese Garlic Bread <b>₹ 65</b></h5>
             </div>
             <div class="w3-container w3-black">
                 <h2> <br> Thankyou <br> Visit Again </h2>
